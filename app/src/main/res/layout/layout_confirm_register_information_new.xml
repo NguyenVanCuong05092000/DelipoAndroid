@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_v50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_confirm_infor_v06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_confirm_infor_v94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_h80_confirm_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_h20_confirm_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <LinearLayout
+        android:id="@+id/linear_step_confirm_infor_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10ssdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5ssdp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_line_confirm_infor_v94"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_confirm_infor_v06"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="@dimen/_100ssdp"
+            android:layout_height="@dimen/_40ssdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_exclusion_light"
+            android:gravity="center"
+            android:text="@string/register_step_1"
+            android:textColor="#000000"
+            android:textSize="@dimen/ts_title_sns" />
+
+        <TextView
+            android:layout_width="@dimen/_100ssdp"
+            android:layout_height="@dimen/_40ssdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_exclusion_light"
+            android:gravity="center"
+            android:text="@string/register_step_2"
+            android:textColor="#000000"
+            android:textSize="@dimen/ts_title_sns" />
+
+        <TextView
+            android:layout_width="@dimen/_100ssdp"
+            android:layout_height="@dimen/_40ssdp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_exclusion_dark"
+            android:gravity="center"
+            android:text="@string/register_step_3"
+            android:textColor="#000000"
+            android:textSize="@dimen/ts_title_sns" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_confirm_information"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_corner_shadow"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/guide_line_confirm_infor_v94"
+        app:layout_constraintStart_toStartOf="@id/guide_line_confirm_infor_v06"
+        app:layout_constraintTop_toBottomOf="@+id/guide_line_h20_confirm_infor"
+        app:layout_constraintBottom_toBottomOf="@id/guide_line_h80_confirm_infor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="@dimen/_20ssdp"
+            android:text="@string/title_confirm_infor_box"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_title_sns" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginHorizontal="@dimen/_10ssdp"
+            android:layout_marginTop="@dimen/_10ssdp"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_115ssdp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <jp.adapter.delipo.view.AutoShrinkTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingHorizontal="@dimen/_5ssdp"
+                            android:text="@string/career_field"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/ts_title_sns" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_115ssdp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <jp.adapter.delipo.view.AutoShrinkTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5ssdp"
+                        android:text="@string/family_size_field"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/ts_title_sns" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_115ssdp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <jp.adapter.delipo.view.AutoShrinkTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5ssdp"
+                        android:text="@string/family_structure_field"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/ts_title_sns" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_115ssdp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <jp.adapter.delipo.view.AutoShrinkTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5ssdp"
+                        android:text="@string/confirm_post_office_field"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/ts_title_sns" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp">
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="6dp"
+                            android:background="#DDDDDD" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_115ssdp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <jp.adapter.delipo.view.AutoShrinkTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_5ssdp"
+                        android:text="@string/income_field"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/ts_title_sns" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/_10ssdp">
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_back_register"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_65ssdp"
+        android:layout_marginHorizontal="@dimen/_10ssdp"
+        android:layout_marginTop="@dimen/_20ssdp"
+        android:background="@drawable/button_back_click_event"
+        app:layout_constraintEnd_toEndOf="@+id/guide_line_v50"
+        app:layout_constraintStart_toStartOf="@+id/linear_confirm_information"
+        app:layout_constraintTop_toBottomOf="@+id/linear_confirm_information" />
+
+    <Button
+        android:id="@+id/button_confirm_infor"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_65ssdp"
+        android:layout_marginHorizontal="@dimen/_10ssdp"
+        android:layout_marginTop="@dimen/_20ssdp"
+        android:background="@drawable/button_confirm_infor_click_event"
+        app:layout_constraintEnd_toEndOf="@+id/linear_confirm_information"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_v50"
+        app:layout_constraintTop_toBottomOf="@+id/linear_confirm_information" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30ssdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_confirm_infor" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

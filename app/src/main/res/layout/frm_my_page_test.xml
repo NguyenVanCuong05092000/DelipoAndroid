@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test.FrmMyPageTest">
+
+    <FrameLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_tv_my_page"
+            android:textColor="@color/colorLine"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_below="@+id/topBar"
+        android:background="@color/colorWhite">
+
+        <ScrollView
+            android:id="@+id/scrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:scrollbars="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation1"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/view" />
+
+                <View
+                    android:id="@+id/viewMemberInformation1"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation1" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation2"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation1" />
+
+                <View
+                    android:id="@+id/viewMemberInformation2"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation2" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation3"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation2" />
+
+                <View
+                    android:id="@+id/viewMemberInformation3"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation3" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation4"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation3" />
+
+                <TextView
+                    android:id="@+id/tvConfiguration"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/colorBgrTextView"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnMemberInformation4" />
+
+                <View
+                    android:id="@+id/viewConfiguration"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvConfiguration" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation5"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewConfiguration" />
+
+                <View
+                    android:id="@+id/viewMemberInformation5"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation5" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation6"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation5" />
+
+                <View
+                    android:id="@+id/viewMemberInformation6"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation6" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation7"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation6" />
+
+                <TextView
+                    android:id="@+id/tvSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/colorBgrTextView"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation7" />
+
+                <View
+                    android:id="@+id/viewSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSupport" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation8"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewSupport" />
+
+                <View
+                    android:id="@+id/viewMemberInformation8"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation8" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation9"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation8" />
+
+                <View
+                    android:id="@+id/viewMemberInformation9"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation9" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation10"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation9" />
+
+                <View
+                    android:id="@+id/viewMemberInformation10"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation10" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation11"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation10" />
+
+                <View
+                    android:id="@+id/viewMemberInformation11"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation11" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation12"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation11" />
+
+                <View
+                    android:id="@+id/viewMemberInformation12"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation12" />
+
+                <TextView
+                    android:id="@+id/btnMemberInformation13"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:background="@color/colorWhite"
+                    android:drawableEnd="@drawable/ic_skip_intro"
+                    android:gravity="left|center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@id/guiH96"
+                    app:layout_constraintStart_toEndOf="@+id/guiH04"
+                    app:layout_constraintTop_toBottomOf="@id/viewMemberInformation12" />
+
+                <View
+                    android:id="@+id/viewMemberInformation13"
+                    android:layout_width="0dp"
+                    android:layout_height="0.7dp"
+                    android:background="@color/colorBorder"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnMemberInformation13" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guiH04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guiH96"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_container_btn_capture"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llBtnImgLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btnHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/btnCancelLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_btn_showrate_return" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnSendLabelImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_btn_showrate_register" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBtnImgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorMain"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btnHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_btn_showrate_register" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnAddMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_btn_showrate_return" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btnSendProductImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_btn_showrate_register" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnCapture"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_capture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnHome"
+            app:layout_constraintStart_toEndOf="@id/btnMyPage" />
+
+        <ImageView
+            android:id="@+id/btnMyPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_btn_mypage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnCapture" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiH05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiH95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

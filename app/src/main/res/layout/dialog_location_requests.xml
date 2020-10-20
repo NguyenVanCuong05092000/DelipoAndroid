@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_dialog_request_permission"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20ssdp"
+        android:background="@drawable/bg_dialog"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15ssdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMessageTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15ssdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_10" />
+
+        <TextView
+            android:id="@+id/tvMessageBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15ssdp"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_11" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorTextRegister" />
+
+        <TextView
+            android:id="@+id/btnWhileUsingApp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ssdp"
+            android:gravity="center"
+            android:text="@string/lbl_btnWhileUsingApp"
+            android:textColor="@color/colorTextDialogLocationRequests"
+            android:textSize="@dimen/ts_17"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorTextRegister" />
+
+        <TextView
+            android:id="@+id/btnOnlyOnce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ssdp"
+            android:gravity="center"
+            android:text="@string/lbl_btnOnlyOnce"
+            android:textColor="@color/colorTextDialogLocationRequests"
+            android:textSize="@dimen/ts_17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorTextRegister" />
+
+        <TextView
+            android:id="@+id/btnNotAllowed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ssdp"
+            android:gravity="center"
+            android:text="@string/lbl_btnNotAllowed"
+            android:textColor="@color/colorTextDialogLocationRequests"
+            android:textSize="@dimen/ts_17" />
+
+    </LinearLayout>
+
+</RelativeLayout>

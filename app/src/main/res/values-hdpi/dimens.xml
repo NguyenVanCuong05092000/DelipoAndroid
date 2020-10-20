@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts_title_sns">10sp</dimen>
+    <dimen name="tsExclusionCommon">13.3sp</dimen>
+    <dimen name="tsEditTextCommon">8.3sp</dimen>
+    <dimen name="tsTitleCommon">16.6sp</dimen>
+
+    <dimen name="hTitleCommon">50dp</dimen>
+    <dimen name="_10ssdp">10dp</dimen>
+    <dimen name="_40ssdp">40dp</dimen>
+    <dimen name="_60ssdp">60dp</dimen>
+    <dimen name="_5ssdp">5dp</dimen>
+    <dimen name="_20ssdp">20dp</dimen>
+    <dimen name="_22ssdp">22dp</dimen>
+    <dimen name="_13_3ssdp">13.3dp</dimen>
+    <dimen name="_3ssdp">3dp</dimen>
+    <dimen name="_25ssdp">25dp</dimen>
+    <dimen name="tsTitleFamilyStruc">15sp</dimen>
+</resources>

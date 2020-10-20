@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imgThumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="40dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:id="@+id/vLabel"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <jp.adapter.delipo.view.AutoShrinkTextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="9sp" />
+    </FrameLayout>
+
+</FrameLayout>

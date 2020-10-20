@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.fragment.FrmRegisterSNS">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/_10ssdp"
+        android:gravity="right"
+        android:text="@string/lbl_tv_app"
+        android:textColor="@color/colorTextRegister"
+        android:textSize="@dimen/ts_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15ssdp"
+        android:gravity="center"
+        android:text="@string/lbl_tv_memberRegistrationScreen"
+        android:textColor="@color/colorTextRegister"
+        android:textSize="@dimen/ts_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40ssdp"
+        android:gravity="center"
+        android:text="@string/lbl_tv_changeRegistration"
+        android:textColor="@color/colorTextRegister"
+        android:textSize="@dimen/ts_20" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40ssdp">
+
+        <EditText
+            android:id="@+id/etNickName"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintNickName"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvNickName" />
+
+        <EditText
+            android:id="@+id/etAge"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintAge"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvAge" />
+
+        <EditText
+            android:id="@+id/etProfession"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintProfession"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvProfession" />
+
+        <EditText
+            android:id="@+id/etFamilyStructure"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintFamilyStructure"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvFamilyStructure" />
+
+        <EditText
+            android:id="@+id/etYourHousePostalCodeNumber"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintYourHousePostalCodeNumber"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvYourHousePostalCodeNumber" />
+
+        <EditText
+            android:id="@+id/etFamilyIncome"
+            style="@style/editTextMemberRegistrationScreen"
+            android:hint="@string/lbl_tv_hintFamilyIncome"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/tvFamilyIncome" />
+
+        <CheckBox
+            android:id="@+id/cbFemale"
+            style="@style/checkBox"
+            app:layout_constraintStart_toEndOf="@id/tvFemale"
+            app:layout_constraintTop_toTopOf="@id/tvGender" />
+
+        <CheckBox
+            android:id="@+id/cbMale"
+            style="@style/checkBox"
+            app:layout_constraintBottom_toBottomOf="@id/cbFemale"
+            app:layout_constraintStart_toEndOf="@id/tvMale"
+            app:layout_constraintTop_toTopOf="@id/cbFemale" />
+
+        <TextView
+            android:id="@+id/tvFemale"
+            style="@style/textCheckBox"
+            android:text="@string/lbl_tv_female"
+            app:layout_constraintBottom_toBottomOf="@id/cbFemale"
+            app:layout_constraintStart_toEndOf="@id/guiW58"
+            app:layout_constraintTop_toTopOf="@id/cbFemale" />
+
+        <TextView
+            android:id="@+id/tvMale"
+            style="@style/textCheckBox"
+            android:layout_marginLeft="@dimen/_15ssdp"
+            android:text="@string/lbl_tv_female"
+            app:layout_constraintBottom_toBottomOf="@id/cbFemale"
+            app:layout_constraintStart_toEndOf="@id/cbFemale"
+            app:layout_constraintTop_toTopOf="@id/cbFemale" />
+
+        <TextView
+            style="@style/textCheckBox"
+            android:text="@string/lbl_tv_selectButton"
+            app:layout_constraintBottom_toBottomOf="@id/tvGender"
+            app:layout_constraintStart_toEndOf="@id/guiW58" />
+
+        <TextView
+            android:id="@+id/tvNickName"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleNickName"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleGender"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickName" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickName" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleAge"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+        <TextView
+            android:id="@+id/tvProfession"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleProfession"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvAge" />
+
+        <TextView
+            android:id="@+id/tvFamilyStructure"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleFamilyStructure"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfession" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfession" />
+
+        <TextView
+            android:id="@+id/tvYourHousePostalCodeNumber"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleYourHousePostalCodeNumber"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvFamilyStructure" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvFamilyStructure" />
+
+        <TextView
+            android:id="@+id/tvFamilyIncome"
+            style="@style/textViewMemberRegistrationScreen"
+            android:text="@string/titleFamilyIncome"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvYourHousePostalCodeNumber" />
+
+        <TextView
+            style="@style/textViewCompulsoryMemberRegistrationScreen"
+            android:textColor="@color/colorTextAny"
+            app:layout_constraintStart_toEndOf="@+id/guiW07"
+            app:layout_constraintTop_toBottomOf="@+id/tvYourHousePostalCodeNumber" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiW58"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.58" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiW07"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lbl_tv_register"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextRegister"
+            android:textSize="@dimen/ts_20" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#DAEDED</color>
+    <color name="colorStrongPink">#D83270</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorStrokeEdtLogin">#CDCDCD</color>
+    <color name="colorPrimaryGreen">#6FBFBF</color>
+    <color name="colorRed">#F44336</color>
+    <color name="colorMain">#97D6E0</color>
+
+    <color name="colorGreen50">#802ED184</color>
+    <color name="colorProgress">#6FBFBF</color>
+    <color name="colorProgressDefault">#FFD7D7D7</color>
+    <color name="colorTabIndicator">#ED1E79</color>
+    <color name="colorTabDefault">#666666</color>
+    <color name="colorTextEditProduct">#464B4E</color>
+
+    <color name="colorTextNotification">#FF0000</color>
+    <color name="colorTextRegister">#707070</color>
+    <color name="colorNotifSuccess">#22B573</color>
+    <color name="colorTextAny">#232160</color>
+    <color name="colorBlackTranfor">#80000000</color>
+
+    <color name="odd_color">#d0deee</color>
+    <color name="even_color">#e9eff7</color>
+    <color name="colorBgrTextView">#E4E4E4</color>
+    <color name="clBgIntro">#539FED</color>
+    <color name="clBorderMenu">#F2F2F2</color>
+    <color name="colorBorder">#707070</color>
+
+    <color name="QRCodeWhiteColor">#ffffff</color>
+
+    <color name="QRCodeBlackColor">#000000</color>
+    <color name="colorLine">#404040</color>
+    <color name="colorLineResInfo">#707070</color>
+    <color name="colorGrayAccent">#DDDDDD</color>
+    <color name="colorGrayLight">#F7F7F7</color>
+
+    <color name="colorShowPageIndicatorView">#EDC44F</color>
+    <color name="colorHidePageIndicatorView">#DEDEDE</color>
+
+    <color name="colorTextDialogLocationRequests">#007AFF</color>
+    <color name="colorDarkBlue">#171955</color>
+
+    <color name="colorBtSelectFamilyConstruct">#9B9B9B</color>
+    <color name="colorTextNotice">#343434</color>
+    <color name="bgTitleCommon">#5157DE</color>
+
+
+</resources>

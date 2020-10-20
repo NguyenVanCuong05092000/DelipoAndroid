@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgThumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/llStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgStar1"
+            android:layout_width="20dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/imgStar2"
+            android:layout_width="20dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/imgStar3"
+            android:layout_width="20dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/imgStar4"
+            android:layout_width="20dp"
+            android:layout_height="24dp" />
+
+        <ImageView
+            android:id="@+id/imgStar5"
+            android:layout_width="20dp"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBlackTranfor"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp">
+
+        <jp.adapter.delipo.view.AutoShrinkTextView
+            android:id="@+id/tvSaasesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/colorWhite"
+            android:textSize="11sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

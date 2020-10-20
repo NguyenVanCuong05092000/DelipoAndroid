@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mtLayoutLoginInput">20dp</dimen>
+    <dimen name="hLayoutLoginInput">90dp</dimen>
+    <dimen name="ts_message_fail">8.3sp</dimen>
+    <dimen name="ts_forgot_register">15sp</dimen>
+    <dimen name="ts_header_dialog_request">18sp</dimen>
+    <dimen name="ts_notice">20sp</dimen>
+
+    <dimen name="hTitleCommon">50dp</dimen>
+
+    <dimen name="tsExclusionCommon">13.3sp</dimen>
+    <dimen name="tsEditTextCommon">8.3sp</dimen>
+    <dimen name="tsTitleCommon">16.6sp</dimen>
+    <dimen name="_10ssdp">10dp</dimen>
+    <dimen name="_40ssdp">40dp</dimen>
+    <dimen name="_60ssdp">60dp</dimen>
+    <dimen name="_5ssdp">5dp</dimen>
+    <dimen name="_13_3ssdp">13.3dp</dimen>
+    <dimen name="_22ssdp">22dp</dimen>
+    <dimen name="_20ssdp">20dp</dimen>
+    <dimen name="_3ssdp">3dp</dimen>
+    <dimen name="_25ssdp">25dp</dimen>
+
+
+    <dimen name="ts_10">10sp</dimen>
+    <dimen name="_15ssdp">15dp</dimen>
+    <dimen name="_50ssdp">50dp</dimen>
+    <dimen name="_30ssdp">30dp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="_6ssdp">6dp</dimen>
+    <dimen name="_200ssdp">200dp</dimen>
+    <dimen name="ts_17">17sp</dimen>
+    <dimen name="_45ssdp">45dp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_35">35sp</dimen>
+    <dimen name="ts_22">22sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="_16ssdp">16dp</dimen>
+    <dimen name="ts_50">50sp</dimen>
+    <dimen name="ts_26">26sp</dimen>
+    <dimen name="ts_15">15sp</dimen>
+    <dimen name="_7ssdp">7dp</dimen>
+    <dimen name="_130ssdp">130dp</dimen>
+    <dimen name="_140ssdp">140dp</dimen>
+    <dimen name="_100ssdp">100dp</dimen>
+    <dimen name="_65ssdp">65dp</dimen>
+    <dimen name="_80ssdp">80dp</dimen>
+    <dimen name="_115ssdp">115dp</dimen>
+    <dimen name="ts_11">11sp</dimen>
+
+</resources>

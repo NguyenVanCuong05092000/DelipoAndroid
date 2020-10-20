@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".screen.fragment.FrmTimePicker">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_tv_timeSendQuestion"
+        android:textAlignment="center"
+        android:textColor="@color/colorNotifSuccess"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorProgressDefault"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl0_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci0_5hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_05h"
+                app:layout_constraintBottom_toBottomOf="@id/ci0_5hr"
+                app:layout_constraintEnd_toEndOf="@id/ci0_5hr"
+                app:layout_constraintStart_toStartOf="@id/ci0_5hr"
+                app:layout_constraintTop_toTopOf="@id/ci0_5hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci1_0hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_10h"
+                app:layout_constraintBottom_toBottomOf="@id/ci1_0hr"
+                app:layout_constraintEnd_toEndOf="@id/ci1_0hr"
+                app:layout_constraintStart_toStartOf="@id/ci1_0hr"
+                app:layout_constraintTop_toTopOf="@id/ci1_0hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci1_5hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_15h"
+                app:layout_constraintBottom_toBottomOf="@id/ci1_5hr"
+                app:layout_constraintEnd_toEndOf="@id/ci1_5hr"
+                app:layout_constraintStart_toStartOf="@id/ci1_5hr"
+                app:layout_constraintTop_toTopOf="@id/ci1_5hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorProgressDefault"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci2_0hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent"  />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_20h"
+                app:layout_constraintBottom_toBottomOf="@id/ci2_0hr"
+                app:layout_constraintEnd_toEndOf="@id/ci2_0hr"
+                app:layout_constraintStart_toStartOf="@id/ci2_0hr"
+                app:layout_constraintTop_toTopOf="@id/ci2_0hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci2_5hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_25h"
+                app:layout_constraintBottom_toBottomOf="@id/ci2_5hr"
+                app:layout_constraintEnd_toEndOf="@id/ci2_5hr"
+                app:layout_constraintStart_toStartOf="@id/ci2_5hr"
+                app:layout_constraintTop_toTopOf="@id/ci2_5hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ci3_0hr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/thumb_time"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                style="@style/textTime"
+                android:text="@string/lbl_tv_30h"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ci3_0hr"
+                app:layout_constraintEnd_toEndOf="@id/ci3_0hr"
+                app:layout_constraintStart_toStartOf="@id/ci3_0hr"
+                app:layout_constraintTop_toTopOf="@id/ci3_0hr" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.044" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartMen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.653" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndWomen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.956" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrayLight"
+        android:paddingVertical="@dimen/_20ssdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glStartMen"
+        app:layout_constraintStart_toStartOf="@+id/glStartTitle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_5ssdp"
+            android:text="@string/text_title_family_construct"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_title_sns" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glStartWomen"
+        app:layout_constraintStart_toStartOf="@+id/glStartMen"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnDecreaseBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/bg_decrease_blue_new"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvValueMen"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvValueMen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/ts_title_sns"
+                android:background="@drawable/bg_value_family_structure"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDecreaseBlue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDecreaseBlue" />
+
+            <ImageView
+                android:id="@+id/btnIncreaseBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/bg_increase_blue_new"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDecreaseBlue"
+                app:layout_constraintStart_toEndOf="@+id/tvValueMen"
+                app:layout_constraintTop_toTopOf="@+id/btnDecreaseBlue" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glEndWomen"
+        app:layout_constraintStart_toStartOf="@+id/glStartWomen"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnDecreasePink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/bg_decrease_pink_new"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvValueWoMen"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvValueWoMen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/ts_title_sns"
+                android:background="@drawable/bg_value_family_structure"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDecreasePink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnDecreasePink" />
+
+            <ImageView
+                android:id="@+id/btnIncreasePink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/bg_increase_pink_new"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDecreasePink"
+                app:layout_constraintStart_toEndOf="@+id/tvValueWoMen"
+                app:layout_constraintTop_toTopOf="@+id/btnDecreasePink" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:background="@color/colorLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/glEndWomen"
+        app:layout_constraintStart_toStartOf="@+id/glStartTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

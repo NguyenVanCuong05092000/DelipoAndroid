@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.linecorp.linesdk:linesdk:5.4.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0a33711e0a83c98f4b52bca53518112/jetified-linesdk-5.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0a33711e0a83c98f4b52bca53518112/jetified-linesdk-5.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d0a33711e0a83c98f4b52bca53518112/jetified-linesdk-5.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linecorp.linesdk/linesdk/5.4.0/c10062ec4cb3d43b212c0769ec60c71ad229010c/linesdk-5.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.linecorp.linesdk/linesdk/5.4.0/7a8d02cdeaffe89115f842a9458f5315259aba49/linesdk-5.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

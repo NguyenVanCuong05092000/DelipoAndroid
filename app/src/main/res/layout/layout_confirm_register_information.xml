@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glContentStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0453" />
+
+    <androidx.constraintlayout.widget.Guideline
+
+        android:id="@+id/glContentStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9546" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear_step_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10ssdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/flRegisterConfirmStep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_exclusion_light_center_new"
+            app:layout_constraintEnd_toStartOf="@+id/flRegisterConfirmStep2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_view_step_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_step_1"
+                android:textColor="#000000"
+                android:textSize="@dimen/tsExclusionCommon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flRegisterConfirmStep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_exclusion_light_center_new"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_view_step_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_step_2"
+                android:textColor="#000000"
+                android:textSize="@dimen/tsExclusionCommon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flRegisterConfirmStep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_exclusion_dark_center_new"
+            app:layout_constraintStart_toEndOf="@+id/flRegisterConfirmStep2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_view_step_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register_step_3"
+                android:textColor="#000000"
+                android:textSize="@dimen/tsExclusionCommon" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linear_information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40ssdp"
+        android:background="@drawable/bg_rounded_corner_shadow"
+        android:elevation="8dp"
+        android:paddingBottom="@dimen/_40ssdp"
+        app:layout_constraintEnd_toEndOf="@+id/glContentStop"
+        app:layout_constraintStart_toStartOf="@+id/glContentStart"
+        app:layout_constraintTop_toBottomOf="@+id/linear_step_register">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInfoStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0332" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glInfoEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9765" />
+
+        <TextView
+            android:id="@+id/tvTitleInfor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5ssdp"
+            android:layout_marginTop="@dimen/_20ssdp"
+            android:text="@string/title_confirm_infor_box"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/ts_title_sns"
+            app:layout_constraintEnd_toEndOf="@+id/glInfoEnd"
+            app:layout_constraintStart_toStartOf="@id/glInfoStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="0dp"
+            android:layout_height="0.7dp"
+            android:layout_marginHorizontal="@dimen/_3ssdp"
+            android:layout_marginTop="@dimen/_10ssdp"
+            android:background="@color/colorLineResInfo"
+            app:layout_constraintEnd_toEndOf="@+id/glInfoEnd"
+            app:layout_constraintStart_toStartOf="@id/glInfoStart"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleInfor" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssdp"
+            android:padding="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/glInfoEnd"
+            app:layout_constraintStart_toStartOf="@id/glInfoStart"
+            app:layout_constraintTop_toBottomOf="@+id/vLine">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glInputStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.454" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glTitleEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.40" />
+
+            <!--clCareer-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCareer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spaceCareer"
+                app:layout_constraintEnd_toEndOf="@+id/glTitleEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvCareer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5ssdp"
+                    android:text="@string/career_field"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ts_title_sns"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView_career"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5ssdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5ssdp"
+                android:textColor="@color/colorTextNotice"
+                android:textSize="@dimen/tsEditTextCommon"
+                app:layout_constraintBottom_toBottomOf="@+id/clCareer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toTopOf="@+id/clCareer" />
+
+            <Space
+                android:id="@+id/spaceCareer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView_career" />
+
+            <View
+                android:id="@+id/vLine1"
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD"
+                app:layout_constraintTop_toBottomOf="@+id/clCareer" />
+
+            <!--clFamilySize-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFamilySize"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spaceMemberFamily"
+                app:layout_constraintEnd_toEndOf="@+id/glTitleEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine1">
+
+                <TextView
+                    android:id="@+id/tvFamilySize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5ssdp"
+                    android:text="@string/family_size_field"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ts_title_sns"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_text_member_family"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5ssdp"
+                android:paddingStart="@dimen/_5ssdp"
+                android:textColor="@color/colorTextNotice"
+                android:textSize="@dimen/tsEditTextCommon"
+                app:layout_constraintBottom_toBottomOf="@+id/clFamilySize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toTopOf="@+id/clFamilySize" />
+
+            <Space
+                android:id="@+id/spaceMemberFamily"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toBottomOf="@+id/tv_text_member_family" />
+
+            <View
+                android:id="@+id/vLine2"
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD"
+                app:layout_constraintTop_toBottomOf="@+id/clFamilySize" />
+
+            <!--clFamilyStructure-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFamilyStructure"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spaceFamilyConstruct"
+                app:layout_constraintEnd_toEndOf="@+id/glTitleEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine2">
+
+                <TextView
+                    android:id="@+id/tvLblFamilyStructure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5ssdp"
+                    android:text="@string/family_structure_field"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ts_title_sns"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvFamilyStructureConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5ssdp"
+                android:textColor="@color/colorTextNotice"
+                android:textSize="@dimen/tsEditTextCommon"
+                app:layout_constraintBottom_toBottomOf="@+id/clFamilyStructure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toTopOf="@+id/clFamilyStructure" />
+
+            <Space
+                android:id="@+id/spaceFamilyConstruct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvFamilyStructureConfirm" />
+
+            <View
+                android:id="@+id/vLine3"
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD"
+                app:layout_constraintTop_toBottomOf="@+id/clFamilyStructure" />
+
+            <!--clPostOffice-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPostOffice"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spacePhoneNumber"
+                app:layout_constraintEnd_toEndOf="@+id/glTitleEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine3">
+
+                <TextView
+                    android:id="@+id/tvPostOffice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5ssdp"
+                    android:text="@string/confirm_post_office_field"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ts_title_sns"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvNumberPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5ssdp"
+                android:layout_marginEnd="@dimen/_5ssdp"
+                android:textColor="@color/colorTextNotice"
+                android:textSize="@dimen/tsEditTextCommon"
+                app:layout_constraintBottom_toBottomOf="@+id/clPostOffice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/glInputStart"
+                app:layout_constraintTop_toTopOf="@+id/clPostOffice" />
+
+            <Space
+                android:id="@+id/spacePhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toBottomOf="@+id/tvNumberPhone" />
+
+            <View
+                android:id="@+id/vLine4"
+                android:layout_width="match_parent"
+                android:layout_height="0.9dp"
+                android:background="#DDDDDD"
+                app:layout_constraintTop_toBottomOf="@+id/clPostOffice" />
+
+            <!--clIncome-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clIncome"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spaceIncome"
+                app:layout_constraintEnd_toEndOf="@+id/glTitleEnd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vLine4">
+
+                <TextView
+                    android:id="@+id/tvIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="@dimen/_5ssdp"
+                    android:text="@string/income_field"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/ts_title_sns"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView_income"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5ssdp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_5ssdp"
+                android:textColor="@color/colorTextNotice"
+                android:textSize="@dimen/tsEditTextCommon"
+                app:layout_constraintBottom_toBottomOf="@+id/clIncome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/glInputStart"
+                app:layout_constraintTop_toTopOf="@+id/clIncome" />
+
+            <Space
+                android:id="@+id/spaceIncome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/glInputStart"
+                app:layout_constraintTop_toBottomOf="@+id/textView_income" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line_v50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/button_back_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25ssdp"
+        android:background="@drawable/button_back_click_event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guide_line_v50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_information" />
+
+    <Button
+        android:id="@+id/button_confirm_infor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25ssdp"
+        android:background="@drawable/button_confirm_infor_click_event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guide_line_v50"
+        app:layout_constraintTop_toBottomOf="@+id/linear_information" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

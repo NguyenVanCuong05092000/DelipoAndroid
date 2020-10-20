@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/vHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryGreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10ssdp"
+            android:gravity="center"
+            android:text="@string/title_infor_product"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameContainerImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.rd.PageIndicatorView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="@dimen/_20ssdp"
+                    app:piv_animationType="scale"
+                    app:piv_dynamicCount="true"
+                    app:piv_interactiveAnimation="true"
+                    app:piv_radius="5dp"
+                    app:piv_selectedColor="@color/colorWhite"
+                    app:piv_unselectedColor="@color/colorMain"
+                    app:piv_viewPager="@id/viewPager" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llInfoProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bg_edt_comment"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:id="@+id/edComment"
+                            style="@style/edInfoProduct"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:hint="@string/hintComment"
+                            android:maxHeight="100dp"
+                            android:maxLength="70"
+                            android:minHeight="70dp"
+                            android:padding="0dp"
+                            android:singleLine="false"
+                            android:textColor="@color/colorMain"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:maxHeight="100dp"
+                            android:maxLines="5"
+                            android:minHeight="70dp"
+                            android:padding="0dp"
+                            android:textColor="@color/colorMain"
+                            android:textSize="14sp" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/llTitleInfoProduct"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:orientation="vertical">
+
+                            <View style="@style/lineInfoProduct" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductCategory" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductName" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductPrice" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductPrice100" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductTax" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductWeight" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductExpirationDate" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductProcessingDate" />
+
+                            <jp.adapter.delipo.view.AutoShrinkTextView
+                                style="@style/textInfoProduct"
+                                android:background="@drawable/border_title_infor_product"
+                                android:gravity="center"
+                                android:text="@string/titleProductManufacturer" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border_content_infor_product"
+                            android:orientation="vertical">
+
+                            <View style="@style/lineInfoProduct" />
+
+                            <TextView
+                                android:id="@+id/tvCategoryName"
+                                style="@style/textInfoProductValue"
+                                android:background="@drawable/border_title_infor_product" />
+
+                            <EditText
+                                android:id="@+id/edProductName"
+                                style="@style/edInfoProduct" />
+
+                            <EditText
+                                android:id="@+id/edPrice"
+                                style="@style/edInfoProduct"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/edTax"
+                                style="@style/edInfoProduct"
+                                android:inputType="numberDecimal" />
+
+                            <EditText
+                                android:id="@+id/edPrice100"
+                                style="@style/edInfoProduct"
+                                android:inputType="number" />
+
+                            <EditText
+                                android:id="@+id/edWeight"
+                                style="@style/edInfoProduct"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/tvExpiration"
+                                style="@style/textInfoProductValue"
+                                android:background="@drawable/border_title_infor_product" />
+
+                            <TextView
+                                android:id="@+id/tvProcessing"
+                                style="@style/textInfoProductValue"
+                                android:background="@drawable/border_title_infor_product" />
+
+                            <EditText
+                                android:id="@+id/edManufacturer"
+                                style="@style/edInfoProduct" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/vClickAble"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtnRegisterProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_20ssdp"
+                android:paddingHorizontal="@dimen/_10ssdp">
+
+                <ImageView
+                    android:id="@+id/btnRegisterProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorAccent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_reg_or_update_product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lbl_tv_register"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtnOK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_20ssdp"
+                android:paddingHorizontal="@dimen/_10ssdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btnOK"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/colorAccent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_reg_or_update_product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lblOK"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

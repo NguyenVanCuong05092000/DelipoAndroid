@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">DELIPO</string>
+    <string name="facebook_app_id">224381528956108</string>
+    <string name="google_client_id">337746372469-aiqc8fbdsldai3j19gcoeqesj4saljpa.apps.googleusercontent.com</string>
+
+    <!-- DiaLog -->
+    <string name="lblOK">OK</string>
+    <string name="msg_error_internet">ネットワークの接続に失敗しました。\n通信環境の良いところでもう一度やり直してください。</string>
+    <string name="msg_error_server">サーバへの接続に失敗しました。\n申し訳ございませんが、しばらく待ってからもう一度やり直してください。</string>
+    <string name="msg_request_permission_camera">商品の写真を撮るには、アプリにカメラへのアクセスが必要です。</string>
+    <string name="msg_request_permission_storage">アプリには、商品の写真を保存するためにメモリにデータを書き込む権限が必要です。</string>
+    <string name="msg_request_permission_location">このアプリは、商品データの作成時に位置情報を取得するために位置情報へのアクセスを必要とします。スマートフォンの電池消耗を防ぐため『このアプリの使用中のみ許可』を推奨しています。</string>
+    <string name="string_dialog_message_introduction">このご利用ガイダンスは、\n設定の「使い方ガイド」でいつでもご覧になれます。</string>
+    <string name="msgLoadingImg">処理中・・・</string>
+    <string name="noticeFacebookCancel">Facebookログインがキャンセルされました</string>
+    <string name="noticeFacebookError">Facebookログインエラー</string>
+    <string name="noticeLineCancel">Lineログインがキャンセルされました</string>
+    <string name="noticeLineError">Lineログインエラー</string>
+    <string name="noticeGoogleError">Googleログインエラー</string>
+
+    <!-- Login Screen -->
+    <string name="title_id_login">メールアドレス</string>
+    <string name="title_password_login">パスワード</string>
+    <string name="btnLogin">ログイン</string>
+    <string name="btnForgotPassword">パスワードをお忘れですか？</string>
+    <string name="title_bottom_login">ログイン情報を維持する□</string>
+    <string name="title_social_login">ソーシャルアカウントでログイン</string>
+    <string name="title_email_login">メールアドレスでログイン</string>
+
+    <!-- Home Screen -->
+    <string name="lbl_iv_home">なるほどDELIPO!</string>
+    <string name="noticeGetPayPayPoints">スーパーマーケットで購入した\nお弁当・お惣菜を登録して PayPay ポイントGET</string>
+    <string name="lbl_tv_policy">「美味しく食べる」に取り組みませんか？\n美味しく食べて・食べ残しを無くすこと\nそれは、すべて地球を守ることに繋がっています\n\n皆さんからお送りいただくデータは\nフードロス対策に大切に使わせていただきます。</string>
+
+    <!-- Rules Screen -->
+    <string name="lbl_tv_instructionsGetPoints">スーパーマーケットで購入したお弁当・お惣菜のデータ・アンケートをDELIPO!に送ると「PONTA・PayPayポイントが最大4ポイント」貰える。\n（Payはシステム上即時ポイント付与が可能、PONTAは？）\n</string>
+    <string name="lbl_tv_todo1">TODO1 ラベルと商品写真の送信で2pt</string>
+    <string name="lbl_tv_todo2">TODO2 レシート送信で1pt…次のバージョン\nで実装 アプリ進化で離脱防止</string>
+    <string name="lbl_tv_todo3">TODO3 アンケートに回答して2pt\n</string>
+    <string name="lbl_tv_criteriaGivenPoint">ポイント付与の決定は、お送り頂いたデータを当社のシステムでチェックし基準を満たしている場合に２４時間以内にアプリで通知します。\n\nポイント付与の可否は以下の基準で判定します。\n（その他、不正は無いか？を洗い出し）\n・ 賞味・消費期限内にデータがアップロードされいる\n・ ラベルの内容が判読できる（ピンボケ・見切れはNG）\n・ 商品のプラスチック製のフタ、ラップが外された状態であること（ご自身が食べるために購入されたことの証明になります。）\n・ ラベルの内容と商品写真の相違が無いこと（ラベルがおにぎり、商品写真が生鮮食品などの相違チェック）\n・ ラベルの日付などに偽造された疑いが無いこと \n・ 購入スーパーマーケットとデータアップロード場所の関係が明らかに移動できない距離\n\n不正行為が数度に及ぶ場合は、事務局内の基準で会員登録を抹消します。理由は一切お伝えできません。… 答えなくても良いような規約にすることを弁護士に確認 ※ スーパーマーケット店内で写真を撮影することは、各店舗で禁止されています。罰則は、各スーパーマーケットの基準に準拠しますので、当社は一切の責任を持ちません。</string>
+
+    <!-- Policy Screen -->
+    <string name="lbl_tv_importanceTheProject">このアプリ・プロジェクトに参加することの意義\n</string>
+    <string name="lbl_tv_warning">※ 惣菜購入のフードロスに繋がるものがたり ※\n</string>
+    <string name="lbl_tv_supporting">美味しく食べれる量とフードロスの関係\n適した量の販売\n次の日もおいしく食べれる工夫\n\n身近な取組がフードロスへとつながることを\n支援しています。</string>
+
+    <!-- Search Screen -->
+    <string name="lbl_tv_hintSearch">商品キーワード検索</string>
+    <string name="lblTabFavorite">お気に入り</string>
+    <string name="lblTabRegistrationOrder">登録順</string>
+    <string name="lblTabCategory">カテゴリー</string>
+
+    <!-- RateProduct Screen -->
+    <string name="lbl_tv_questionnaireAfterMeal">食後のアンケート</string>
+    <string name="noticeYourThoughts">あなたが先ほど登録した下記の商品について \n 感想を教えてください。\n お送りいただいたお客様には \nご回答後「2pt」を差し上げます。</string>
+    <string name="lbl_tv_price">価格</string>
+    <string name="lbl_tv_affordability">値ごろ感</string>
+    <string name="lbl_tv_originality">オリジナリティ</string>
+    <string name="lbl_tv_deliciousness">美味しさ</string>
+    <string name="lbl_tv_commitmentToMaterial">素材へのこだわり</string>
+    <string name="lbl_tv_goodLooking">見栄えの良さ</string>
+    <string name="lbl_tv_intentToRepeat">リピート意向</string>
+
+    <!-- ShowRate Screen -->
+    <string name="lbl_tv_questionnaireConfirmationAfterMeal">食後のアンケート確認</string>
+    <string name="lbl_tv_questionRegister">以下の内容で登録します。\n よろしいですか？</string>
+
+    <!-- CreateProduct Screen -->
+    <string name="headerCaptureLabel">ラベル撮影</string>
+    <string name="titleCaptureLabel">商品の登録を開始します。</string>
+    <string name="titleCaptureProduct">続いて商品情報を登録します。</string>
+    <string name="msgCaptureLabel">商品名・価格・消費期限・加工者などが\n枠に収まるようにラベルを撮影してください。</string>
+    <string name="msgCaptureProduct">商品全体を撮影してください。 \n商品写真は、2枚登録します。</string>
+    <string name="noticeCaptureLabel">枠いっぱいに合せて撮影してください</string>
+    <string name="noticeCaptureProduct">枠内に合せて撮影してください</string>
+
+    <!-- EditProduct Screen -->
+    <string name="hintComment"><![CDATA[>コメント（70文字程度）]]></string>
+    <string name="titleProductCategory">カテゴリー</string>
+    <string name="titleProductName">商品名</string>
+    <string name="titleProductPrice">価格(税抜)</string>
+    <string name="titleProductTax">価格(税込)</string>
+    <string name="titleProductPrice100">価格(100g)</string>
+    <string name="titleProductWeight">内容量</string>
+    <string name="titleProductExpirationDate">消費期限</string>
+    <string name="titleProductProcessingDate">加工日</string>
+    <string name="titleProductManufacturer">加工者</string>
+    <string name="titleProductStoreName">販売店</string>
+
+    <!-- PaymentRegister Screen -->
+    <string name="noticeCheckPoint">獲得したポイントは、マイページのDELIPO!通帳\nをご確認ください。</string>
+    <string name="noticeProductLabel">商品ラベル・写真の分析結果\n非常に良好でした。ありがとうございました。</string>
+    <string name="noticeGivePoint">いづれかのポイントを2pt進呈します。\n選択後、登録を押してください。</string>
+    <string name="lbl_tv_registrationPoint">商品登録の終了</string>
+    <string name="lbl_tv_donate">環境団体への寄付</string>
+
+    <!-- PassBook Screen -->
+    <string name="lbl_tv_move">移動</string>
+    <string name="lbl_tv_yes">はい</string>
+    <string name="lbl_tv_no">いいえ</string>
+    <string name="noticeMovePoint">ご自身のポイントカードへ移動しますか？</string>
+    <string name="lbl_tv_showPoint">DELIPO!通帳</string>
+    <string name="lbl_tv_consideringProcedures">※　手続き検討中</string>
+    <string name="lbl_tv_pointDemo">OOpt</string>
+    <string name="lbl_tv_date">YYYY/MM/DD HH/MMに</string>
+    <string name="noticeAfterAddPoint">商品データアップにより2ptが追加されました。\n現在、○○ポイント溜まってます。</string>
+
+    <!-- Register Screen -->
+    <string name="lbl_tv_informationInput">情報入力</string>
+    <string name="lbl_tv_complete">完了</string>
+    <string name="lbl_tv_newMemberRegistration">DELIPO!新規会員登録</string>
+    <string name="lbl_tv_registrationWithSocialAccount">ソーシャルアカウントで新規会員登録</string>
+    <string name="lbl_tv_registrationWithEmailAddress">メールアドレスで新規会員登録</string>
+    <string name="lbl_tv_login">確認メールを送信</string>
+    <string name="lbl_select">選択する</string>
+
+    <!-- AskToAns Screen -->
+    <string name="noticeAddPoint">お食事後\nアンケートに答えて\nいただけますか？\n\nアンケートに\nお答えいただくと\n更に2pt進呈</string>
+
+    <!-- ConfirmSNSInfo Screen -->
+    <string name="lbl_tv_return">戻る</string>
+    <string name="lbl_tv_confirmation">確認</string>
+    <string name="lbl_tv_confirmLogin">ログイン情報の確認</string>
+    <string name="noticeCompleteRegistration">以下の内容でDELIPO!会員登録が完了しました。</string>
+    <string name="noticeSNSLogin">SNSログイン LINEとかTWとか\n会員内容</string>
+    <string name="noticeEnjoyDELIPO">DELIPO!をお楽しみください。</string>
+    <string name="noticeChangeInformation">会員登録の内容は、アプリ内のマイページでいつでも変更できます。</string>
+
+    <!-- NotifAnalyze Screen -->
+    <string name="noticePoint">データの分析終了後\nポイントと一緒に\nアプリで通知します。\n\nしばらくお待ちください</string>
+
+    <!-- TimePicker Screen -->
+    <string name="lbl_tv_timeSendQuestion">アンケートを\nお送りする時間\n\nいまから</string>
+    <string name="lbl_tv_05h">0.5hr</string>
+    <string name="lbl_tv_10h">1.0hr</string>
+    <string name="lbl_tv_15h">1.5hr</string>
+    <string name="lbl_tv_20h">2.0hr</string>
+    <string name="lbl_tv_25h">2.5hr</string>
+    <string name="lbl_tv_30h">3.0hr</string>
+
+    <!-- RegisterSNS Screen -->
+    <string name="lbl_tv_compulsory">必修</string>
+    <string name="lbl_tv_any">任意</string>
+    <string name="lbl_tv_register">登録</string>
+    <string name="titleNickName">ニックネーム</string>
+    <string name="lbl_tv_hintNickName">全角10文字まで</string>
+    <string name="titleGender">性別</string>
+    <string name="titleAge">年齢</string>
+    <string name="titleProfession">職業</string>
+    <string name="titleFamilyStructure">家族構成</string>
+    <string name="titleYourHousePostalCodeNumber">お住まいの郵便番号</string>
+    <string name="titleFamilyIncome">ご家族の年収</string>
+    <string name="lbl_tv_female">女性</string>
+    <string name="lbl_tv_male">男性</string>
+    <string name="lbl_tv_hintAge">プルダウン</string>
+    <string name="lbl_tv_hintProfession">プルダウン</string>
+    <string name="lbl_tv_hintFamilyStructure">構成パターンを選択</string>
+    <string name="lbl_tv_hintYourHousePostalCodeNumber">□□□ー□□□□ \n数字入力 数字キーボード表示</string>
+    <string name="lbl_tv_hintFamilyIncome">プルダウン</string>
+    <string name="lbl_tv_app">アプリ</string>
+    <string name="lbl_tv_memberRegistrationScreen">DELIPO!会員登録画面</string>
+    <string name="lbl_tv_changeRegistration">SNSによって登録項目を変更</string>
+    <string name="lbl_tv_selectButton">選択ボタン</string>
+
+    <!-- NotifSuccess Screen -->
+    <string name="lbl_tv_homeAutomatically">自動でHOME</string>
+    <string name="noticeSendQuestion">○○後にアンケートを\nお送りします。</string>
+
+    <!-- NotifConnectSNS Screen -->
+    <string name="noticeSuccessfulLinks">〇〇（SNS名）とDELIPO!の連\n携に成功しました\n\n引き続き、DELIPO!会員情報の\n登録をお願いします。</string>
+
+    <!-- TermsOfService Screen -->
+    <string name="lbl_tv_TermsOfService">利用規約</string>
+    <string name="lbl_tv_agree">同意</string>
+    <string name="lbl_tv_disagree">同意しない</string>
+
+    <!-- FrmDenyTermsOfService Screen -->
+    <string name="lbl_tv_prepareScreenNotToAgree">同意しない\n画面を用意</string>
+    <string name="lbl_tv_web">WEB</string>
+
+    <!-- NotifConfirmEmail Screen -->
+    <string name="noticeSendEmail">メールを送信しました。\nメールの内容をご確認の上、会員\n登録をお願いします。</string>
+
+    <!-- WarningWeb Screen -->
+    <string name="lbl_tv_email">メール</string>
+    <string name="lbl_tv_automaticDeliveryMail">自動配信メール</string>
+    <string name="noticeURL">この度は、… \n\nメールに記載のURL</string>
+    <string name="noticeContactUs">本メールにお心当たりの無いかた\nは、…にご連絡ください。</string>
+
+    <!-- MemberRegister Screen -->
+    <string name="lbl_tv_hintMailAddress">登録されたアドレスを自動表示</string>
+    <string name="lbl_tv_hintDesiredPassword">8文字以上　英数字混在</string>
+    <string name="lbl_tv_ponta">PONTA</string>
+    <string name="lbl_tv_paypay">PayPay</string>
+    <string name="lbl_tv_mailAddress">メールアドレス</string>
+    <string name="lbl_tv_desiredPassword">ご希望のパスワード</string>
+    <string name="lbl_tv_birthday">誕生日</string>
+    <string name="lbl_tv_pointReturnDestination">ポイント還元先</string>
+
+    <!-- NotifRegisterSuccess Screen -->
+    <string name="noticeRegistration">以下の内容でDELIPO!会員登録\nが完了しました。\n\n会員内容\n\n\nアプリを起動し、DELIPO!をお\n楽しみください。\n\n\n本メールにお心当たりの無いかたは、…にご連絡ください。</string>
+    <string name="title_infor_product">DELIPO!へ商品を登録します</string>
+
+    <!-- Intro Screen -->
+    <string name="titleDontAskAgain">次回から表示しない</string>
+    <string name="lbl_tvNotificationTop">パスワード変更用のURLをお送りします。\nご登録頂いているアドレスを送信してください</string>
+    <string name="hint_require">必須</string>
+    <string name="lbl_ivEmail">メールアドレス</string>
+    <string name="lbl_btnSendEmail">送信</string>
+    <string name="lbl_btnCancel">cancel</string>
+    <string name="lbl_tvNotificationConfirmPassword">登録されているメールアドレスへURLを記載し\n たメールを送信しました。\n手続きに従ってパスワードを変更してください。</string>
+    <string name="lbl_btnConfirm">確認</string>
+    <string name="register_step_1">登録情報入力</string>
+    <string name="register_step_2">確　認</string>
+    <string name="register_step_3">会員登録完了</string>
+    <string name="text_title_register_sns">ソーシャルアカウントでログイン</string>
+    <string name="text_title_register_email">メールアドレスで新規会員登録</string>
+    <string name="infor_email_field">メールアドレス</string>
+    <string name="text_hint_register">入力してください</string>
+    <string name="infor_password_field">パスワード</string>
+    <string name="text_button_register">新規会員登録する</string>
+    <string name="text_error_register">ここにエラーメッセージが表示されます。</string>
+
+    <!-- FrmAfterLogin Screen -->
+    <string name="msg_login_completed">ログイン完了 ！</string>
+    <string name="lbl_btn_startDELIPO">DELIPOをはじめる</string>
+
+    <!-- FrmForgotPassword Screen -->
+    <string name="lbl_hint_email">メールアドレス</string>
+    <string name="lbl_btnResetPassword">パスワードをリセットする</string>
+    <string name="lbl_tv_tutorial">ご登録のメールアドレスを入力して\nパスワードリセットリンクをお受け取りください。</string>
+    <string name="lbl_tv_forgotPassword">パスワードをお忘れですか？</string>
+
+    <!-- FrmIntro Screen -->
+    <string name="lbl_btn_intro">次　へ</string>
+    <string name="lbl_btn_skipIntro">チュートリアルをスキップ</string>
+
+    <!-- FrmLogin Screen -->
+    <string name="lbl_tv_loginWithSNS">ソーシャルアカウントでログイン</string>
+    <string name="lbl_tv_loginWithEmail">メールアドレスでログイン</string>
+    <string name="lbl_hint_password">パスワード</string>
+    <string name="lbl_btnRegistration">新規会員登録はこちら</string>
+
+    <!-- Dialog Location Requests -->
+    <string name="lbl_tvHeader">“DELIPO”に位置情報の利用を許可しますか？</string>
+    <string name="lbl_tvMessageTop">本アプリは、サービス提供エリアを順次拡大しています。位置情報はサービス提供エリアの判定、商品データの充実、また現在位置に応じたメッセージをお送りするために利用されます。</string>
+    <string name="lbl_tvMessageBottom">※位置情報は匿名化加工され商品データに付加されます。※ADAPTER INC.は、プライバシーマークを取得し、皆様の個人情報を機密情報として厳正に管理しています。</string>
+    <string name="lbl_btnWhileUsingApp">Appの使用中は許可</string>
+    <string name="lbl_btnOnlyOnce">1度だけ許可</string>
+    <string name="lbl_btnNotAllowed">許可しない</string>
+
+    <string-array name="labels_array">
+        <item>３００万円 未満</item>
+        <item>３００万円以上 ５００万円未満</item>
+        <item>５００万円以上 ７００万円未満</item>
+        <item>７００万円以上 １０００万円未満</item>
+        <item>１０００万円以上 １５００万円未満</item>
+        <item>１５００万円以上</item>
+        <item>わからない</item>
+        <item>回答しない </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_tv_splash">お 弁 当 ・ お 惣 菜 を 食 べ て\n食 環 境 を 豊 か に す る プ ロ ジ ェ ク ト</string>
+    <string name="title_infor_box">〇〇とDELIPOの連携に成功しました。\n 引き続きDELIPO会員情報の登録をお願いいたします。</string>
+    <string name="title_register_information">会員登録情報 入力</string>
+    <string name="career_field">職業</string>
+    <string name="family_size_field">家族人数</string>
+    <string name="family_structure_field">家族構成</string>
+    <string name="post_office_field">郵便番号</string>
+    <string name="income_field">ご家族の年収</string>
+    <string name="title_confirm_infor_box">下記の情報で登録しますか？\n(会員登録の内容は、アプリ内のマイページでいつでも変更できます)</string>
+    <string name="confirm_post_office_field">お住まいの郵便番号</string>
+    <string name="title_register_account">新規会員登録</string>
+    <string name="confirm_password_field">確認用パスワード</string>
+    <string name="text_accept_policy">プライバシーポリシーに同意する</string>
+    <string name="text_accept_term">利用規約に同意する</string>
+    <string name="text_title_family_construct">家族構成</string>
+    <string name="text_title_confirm_register_infor">会員登録情報 確認</string>
+    <string name="text_register_dob_field">誕生日</string>
+    <string name="text_register_gender_field">性別</string>
+    <string name="text_female">女性</string>
+    <string name="text_male">男性</string>
+    <string name="text_after_register">会員登録完了 ！</string>
+
+    <!-- Title Family Structure -->
+    <string name="title_under_primary">小学生以下</string>
+    <string name="title_primary">小学生</string>
+    <string name="title_secondary">中学生</string>
+    <string name="title_15_20_age">15–20歳</string>
+    <string name="title_21_30_age">21–30歳</string>
+    <string name="title_31_40_age">31–40歳</string>
+    <string name="title_41_50_age">41–50歳</string>
+    <string name="title_51_60_age">51–60歳</string>
+    <string name="title_above_60_age">60歳以上</string>
+    <string name="lbl_tv_my_page">マイページ</string>
+    <string name="text_hint_year">年</string>
+    <string name="text_hint_month">月</string>
+    <string name="text_hint_day">日</string>
+    <string name="hintPleaseSelect">選択してください</string>
+
+    <!-- FrmNewPassword Screen -->
+    <string name="text_title_new_password">パスワードの再設定</string>
+    <string name="text_title_new_password_field">新しいパスワードを設定してください。</string>
+
+    <!-- FrmAfterResetPass Screen -->
+    <string name="password_reset_completed">パスワード再設定完了!</string>
+
+</resources>

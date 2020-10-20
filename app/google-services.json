@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337746372469",
+    "firebase_url": "https://delipo.firebaseio.com",
+    "project_id": "delipo",
+    "storage_bucket": "delipo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337746372469:android:c35e3ad6aaa26d71be553c",
+        "android_client_info": {
+          "package_name": "jp.adapter.delipo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337746372469-qe0mr71spgjf186311mhfjuhbvasog46.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.adapter.delipo",
+            "certificate_hash": "8ae98f6caf077914af365d332822592e1257db04"
+          }
+        },
+        {
+          "client_id": "337746372469-via535pvvtb790arm27vraqh36roojvq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIMeiKP8rX-pY0UTu8YXko6IHQ7rMKFrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337746372469-via535pvvtb790arm27vraqh36roojvq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "337746372469-6oc3u5t25hl227tglba2lpia7kii500j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.adapter.delipo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

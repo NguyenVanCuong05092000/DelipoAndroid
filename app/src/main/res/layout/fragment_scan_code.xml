@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_scan_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test.FrmScanCode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_50ssdp"
+            android:text="Click Here TO generate qr code"
+            android:textAllCaps="false"
+            android:textSize="@dimen/ts_16" />
+
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/_50ssdp"
+            android:text="Scan Your QR Code"
+            android:textAllCaps="false"
+            android:textSize="@dimen/ts_16" />
+
+        <TextView
+            android:id="@+id/tv_qr_readTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200ssdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+    </style>
+
+    <style name="splashScreenTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <item name="scaleType">fitCenter</item>
+    </style>
+
+    <style name="dialogWithoutBox">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <!--        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <!--        <item name="android:backgroundDimEnabled">false</item>-->
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="dialogNotice">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="textInfoProduct">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textColor">@color/colorTextEditProduct</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textInfoProductValue" parent="textInfoProduct">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="edInfoProduct" parent="textInfoProductValue">
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@drawable/border_title_infor_product</item>
+        <item name="android:enabled">false</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+
+    <style name="lineInfoProduct">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorProgress</item>
+    </style>
+
+    <style name="lineInfoProductVertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorProgress</item>
+    </style>
+
+    <style name="textTagSearch">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/bg_title_tab_selector</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Item" parent="">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Item.Path">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/path_white_oval</item>
+    </style>
+
+    <style name="itemMenu">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:gravity">center</item>
+        <item name="arc_origin">center</item>
+    </style>
+
+    <style name="editTextMemberRegistrationScreen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/colorTextRegister</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="textViewMemberRegistrationScreen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorTextRegister</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="textViewCompulsoryMemberRegistrationScreen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:text">@string/lbl_tv_compulsory</item>
+        <item name="android:textColor">@color/colorTextNotification</item>
+    </style>
+
+    <style name="checkBox">
+        <item name="android:layout_width">@dimen/_20ssdp</item>
+        <item name="android:layout_height">@dimen/_20ssdp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:button">@drawable/bg_registration_checkbox_custom</item>
+    </style>
+
+    <style name="textCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorTextRegister</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:button">@drawable/bg_registration_checkbox_custom</item>
+    </style>
+
+    <style name="textTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CheckBox">
+        <item name="colorAccent">#E91E63</item>
+    </style>
+
+    <style name="rangeSeekBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="rsb_gravity">bottom</item>
+        <item name="rsb_mode">single</item>
+        <item name="rsb_progress_color">@color/colorProgress</item>
+        <item name="rsb_progress_default_color">@color/colorTextRegister</item>
+        <item name="rsb_progress_height">8dp</item>
+        <item name="rsb_step_auto_bonding">true</item>
+        <item name="rsb_step_height">1dp</item>
+        <item name="rsb_step_width">1dp</item>
+        <item name="rsb_steps">5</item>
+        <item name="rsb_thumb_drawable">@drawable/thumb_blue_stroke</item>
+        <item name="rsb_tick_mark_mode">other</item>
+        <item name="rsb_tick_mark_text_array">@array/wordsArray</item>
+        <item name="rsb_tick_mark_text_color">@color/colorBlack</item>
+        <item name="rsb_tick_mark_text_margin">15dp</item>
+    </style>
+
+    <style name="itemFamilyStructure">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/_10ssdp</item>
+        <item name="android:layout_marginRight">@dimen/_10ssdp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+</resources>
